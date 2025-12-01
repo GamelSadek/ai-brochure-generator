@@ -236,15 +236,59 @@ if __name__ == "__main__":
     """
     Main execution block - runs when script is executed directly.
 
-    Usage examples:
+    Usage:
         python brochure_generator.py
 
-    You can modify the company name and URL below to generate brochures
-    for different companies.
+    The script will prompt you to enter the company name and URL interactively.
     """
-    # Example: Generate a brochure for a company
-    company_name = "Tktah"
-    company_url = "https://tktah.com"
+    print("=" * 60)
+    print("🤖 AI-Powered Company Brochure Generator")
+    print("=" * 60)
+    print()
 
-    print(f"Generating brochure for {company_name}...")
-    stream_brochure(company_name, company_url, save_to_file=f"{company_name}_brochure.md")
+    # Get company name from user
+    company_name = input("Enter the company name: ").strip()
+
+    if not company_name:
+        print("❌ Company name cannot be empty. Exiting...")
+        exit(1)
+
+    # Get company URL from user
+    company_url = input("Enter the company website URL (e.g., https://example.com): ").strip()
+
+    # Basic URL validation
+    if not company_url:
+        print("❌ URL cannot be empty. Exiting...")
+        exit(1)
+
+    if not company_url.startswith(('http://', 'https://')):
+        print("⚠️  URL should start with http:// or https://")
+        print("   Adding https:// automatically...")
+        company_url = f"https://{company_url}"
+
+    # Confirm with user
+    print()
+    print("-" * 60)
+    print(f"Company: {company_name}")
+    print(f"URL: {company_url}")
+    print("-" * 60)
+
+    proceed = input("\nProceed with brochure generation? (y/n): ").strip().lower()
+
+    if proceed != 'y':
+        print("❌ Operation cancelled.")
+        exit(0)
+
+    # Generate the brochure
+    print()
+    print(f"🚀 Generating brochure for {company_name}...")
+    print("This may take 30-60 seconds...\n")
+
+    try:
+        output_file = f"{company_name.replace(' ', '_')}_brochure.md"
+        stream_brochure(company_name, company_url, save_to_file=output_file)
+        print(f"\n✅ Success! Brochure saved to: {output_file}")
+    except Exception as e:
+        print(f"\n❌ Error generating brochure: {str(e)}")
+        print("Please check your API key and internet connection.")
+        exit(1)

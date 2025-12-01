@@ -60,22 +60,42 @@ Check out [Speero_brochure.md](Speero_brochure.md) for an example of what this t
 
 ## Usage
 
-### Command Line
+### Command Line (Interactive Mode)
 
-Run the script directly:
+Run the script and follow the prompts:
 
 ```bash
 python brochure_generator.py
 ```
 
-By default, this will generate a brochure for the example company (Speero). To customize:
+You'll be prompted to enter:
+1. Company name (e.g., "Tesla")
+2. Company website URL (e.g., "https://tesla.com")
+3. Confirmation to proceed
 
-1. Open `brochure_generator.py`
-2. Modify the variables in the `if __name__ == "__main__"` section:
-   ```python
-   company_name = "YourCompany"
-   company_url = "https://example.com"
-   ```
+**Example session:**
+```
+============================================================
+🤖 AI-Powered Company Brochure Generator
+============================================================
+
+Enter the company name: Tesla
+Enter the company website URL (e.g., https://example.com): https://tesla.com
+
+------------------------------------------------------------
+Company: Tesla
+URL: https://tesla.com
+------------------------------------------------------------
+
+Proceed with brochure generation? (y/n): y
+
+🚀 Generating brochure for Tesla...
+This may take 30-60 seconds...
+
+[Brochure content streams here...]
+
+✅ Success! Brochure saved to: Tesla_brochure.md
+```
 
 ### As a Python Module
 

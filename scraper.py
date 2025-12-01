@@ -4,7 +4,7 @@ Web Scraping Utilities
 This module provides helper functions to fetch and parse website content.
 It extracts text content and hyperlinks from web pages for analysis.
 
-Author: Your Name
+Author: Gamel Sadek
 License: MIT
 """
 

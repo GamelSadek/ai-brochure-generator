@@ -5,7 +5,7 @@ This module uses OpenAI's GPT models to automatically generate engaging marketin
 brochures from company websites. It intelligently crawls relevant pages (About,
 Careers, etc.) and creates witty, informative content.
 
-Author: Your Name
+Author: Gamil Sadek
 License: MIT
 """
 
@@ -243,8 +243,8 @@ if __name__ == "__main__":
     for different companies.
     """
     # Example: Generate a brochure for a company
-    company_name = "Speero"
-    company_url = "https://speero.net"
+    company_name = "Tktah"
+    company_url = "https://tktah.com"
 
     print(f"Generating brochure for {company_name}...")
     stream_brochure(company_name, company_url, save_to_file=f"{company_name}_brochure.md")

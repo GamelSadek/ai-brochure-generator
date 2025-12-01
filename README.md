@@ -28,7 +28,7 @@ Check out [Speero_brochure.md](Speero_brochure.md) for an example of what this t
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/ai-brochure-generator.git
+   git clone https://github.com/GamelSadek/ai-brochure-generator.git
    cd ai-brochure-generator
    ```
 
@@ -205,8 +205,8 @@ This tool is for educational and portfolio purposes. When scraping websites:
 
 ## Author
 
-**Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
+**Gamel Sadek**
+- GitHub: [@GamelSadek](https://github.com/GamelSadek)
 - Portfolio: [yourportfolio.com](https://yourportfolio.com)
 
 ## Acknowledgments
@@ -217,4 +217,4 @@ This tool is for educational and portfolio purposes. When scraping websites:
 
 ---
 
-**Made with AI** | [Star this repo](https://github.com/yourusername/ai-brochure-generator) if you find it useful!
+**Made with AI** | [Star this repo](https://github.com/GamelSadek/ai-brochure-generator) if you find it useful!

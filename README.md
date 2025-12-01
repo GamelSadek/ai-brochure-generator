@@ -207,7 +207,6 @@ This tool is for educational and portfolio purposes. When scraping websites:
 
 **Gamel Sadek**
 - GitHub: [@GamelSadek](https://github.com/GamelSadek)
-- Portfolio: [yourportfolio.com](https://yourportfolio.com)
 
 ## Acknowledgments
 
